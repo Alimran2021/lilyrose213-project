@@ -10,18 +10,21 @@ import Leads from "./lead.json";
 import Img from "../../assets/images/img-2.png";
 import groupArrow from "../../assets/images/group-arrow.png";
 import SingleLead from "./SingleLead";
+import { Hidden } from "@mui/material";
 function LeadPointer() {
   return (
     <>
       <SingleLead />
-      <Box sx={{ textAlign: "center", cursor: "default" }}>
-        {" "}
-        <img
-          srcSet={`${groupArrow}?w=248&fit=crop&auto=format&dpr=2 2x`}
-          src={`${groupArrow}?w=248&fit=crop&auto=format`}
-          loading="lazy"
-        />
-      </Box>
+      <Hidden only="xs">
+        <Box sx={{ textAlign: "center", cursor: "default" }}>
+          {" "}
+          <img
+            srcSet={`${groupArrow}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            src={`${groupArrow}?w=248&fit=crop&auto=format`}
+            loading="lazy"
+          />
+        </Box>
+      </Hidden>
       <Grid
         sx={{
           padding: "0px 24px",

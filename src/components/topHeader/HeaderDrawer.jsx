@@ -10,7 +10,25 @@ import {
   Stack,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-const pages = ["Home", "About Us", "Team", "What We Have To Offer"];
+// const pages = ["Home", "About Us", "Team", "What We Have To Offer"];
+const pages = [
+  {
+    link: "/home",
+    page: "Home",
+  },
+  {
+    link: "/",
+    page: "About Us",
+  },
+  {
+    link: "/team",
+    page: "Team",
+  },
+  {
+    link: "/",
+    page: "What We Have To Offer",
+  },
+];
 const HeaderDrawer = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -22,10 +40,10 @@ const HeaderDrawer = () => {
         onClose={() => setOpenDrawer(false)}
       >
         <List>
-          {pages.map((page, index) => (
-            <ListItemButton key={index}>
+          {pages.map((p, index) => (
+            <ListItemButton to={p.link} key={index}>
               <ListItemIcon>
-                <ListItemText>{page}</ListItemText>
+                <ListItemText>{p.page}</ListItemText>
               </ListItemIcon>
             </ListItemButton>
           ))}

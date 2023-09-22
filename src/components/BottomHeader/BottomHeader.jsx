@@ -1,15 +1,22 @@
 import Img from "../../assets/images/img-1.png";
 import { Box, Grid, Typography } from "@mui/material";
-
+import {
+  ThemeProvider,
+  createTheme,
+  responsiveFontSizes,
+} from "@mui/material/styles";
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
 function BottomHeader() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Box sx={{ padding: "0px 24px", marginTop: "15%" }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 2 }}>
           <Grid item xs={12} md={8}>
             <Typography
+              variant="h3"
               sx={{
-                fontSize: "55px",
+                // fontSize: "20px",
                 color: "#10C4FD",
                 fontWeight: 500,
                 textAlign: "center",
@@ -36,7 +43,7 @@ function BottomHeader() {
           </Grid>
         </Grid>
       </Box>
-    </>
+    </ThemeProvider>
   );
 }
 

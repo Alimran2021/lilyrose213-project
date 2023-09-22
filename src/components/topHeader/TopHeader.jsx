@@ -40,9 +40,7 @@ const TopHeader = () => {
           </Typography>
           {"  "}
           {isMatch ? (
-            <>
-              <HeaderDrawer />
-            </>
+            <HeaderDrawer />
           ) : (
             <>
               <Stack
