@@ -9,15 +9,19 @@ import "./team.css";
 import Teams from "./team.json";
 import TeamImg from "../../assets/images/john.png";
 import TopHeader from "../topHeader/TopHeader";
+import SingleTeam from "./SingleTeam";
 
 const Team = () => {
   return (
     <>
       <TopHeader />
       <div className="teamList">
+        <Typography sx={{ paddingTop: "15%" }}>
+          <SingleTeam />
+        </Typography>
         <Grid
           sx={{
-            padding: " 24px",
+            padding: " 5% 24px",
             margin: "15% 15%",
             textAllign: "center",
           }}
@@ -26,7 +30,7 @@ const Team = () => {
           columns={{ xs: 4, sm: 8, md: 12 }}
         >
           {Teams.map((team, index) => (
-            <Grid item rowSpacing={0} xs={6} sm={2} md={2} key={index}>
+            <Grid item rowSpacing={0} xs={6} sm={3} md={3} key={index}>
               <Card sx={{ cursor: "default", border: "1px solid #10C4FD" }}>
                 <CardActionArea
                   sx={{

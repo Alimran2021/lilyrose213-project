@@ -8,8 +8,10 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+// import "./topHeader.css";
 // import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import HeaderDrawer from "./HeaderDrawer";
+import { NavLink } from "react-router-dom";
 
 const TopHeader = () => {
   const [value, setValue] = useState();
@@ -53,18 +55,22 @@ const TopHeader = () => {
                 onChange={(e, value) => setValue(value)}
                 columnSpacing={{ md: 5 }}
               >
-                <Button sx={{ color: "#fff" }} variant="outlined">
-                  Home
-                </Button>
-                <Button sx={{ color: "#fff" }} variant="outlined">
+                {/*  eslint-disable-next-line react/no-unknown-property */}
+                <NavLink to="/home">Home</NavLink>
+                <NavLink sx={{ color: "#fff" }} variant="outlined">
                   About Us
-                </Button>
-                <Button sx={{ color: "#fff" }} variant="outlined">
+                </NavLink>
+                <NavLink
+                  // sx={{ color: "#fff !important", border: "1px solid #10C4FD" }}
+                  // variant="outlined"
+                  id="navLink"
+                  to="/team"
+                >
                   Team
-                </Button>
-                <Button sx={{ color: "#fff" }} variant="outlined">
+                </NavLink>
+                <NavLink sx={{ color: "#fff" }} variant="outlined">
                   What We Have To Offer
-                </Button>
+                </NavLink>
               </Stack>
               <Button sx={{ marginLeft: "auto" }} variant="contained">
                 Contact Us

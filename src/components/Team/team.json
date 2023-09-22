@@ -1,11 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "John Doe",
-    "des": "Lead Painter",
-    "img": "../../assets/images/john.png"
-  },
-  {
     "id": 2,
     "title": "John Doe",
     "des": "Lead Painter",

@@ -13,7 +13,7 @@ function BottomHeader() {
                 color: "#10C4FD",
                 fontWeight: 500,
                 textAlign: "center",
-                lineHeight: "45px",
+                lineHeight: "55px",
               }}
             >
               {" "}

@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+a {
+  font-weight: 400;
+  color: #fff !important;
+  text-decoration: inherit;
+  padding: 6px;
+  border: 1px solid #1446f4;
+  border-radius: 3px;
+}
+
 body {
   background-color: #0f0f0f !important;
   display: flow-root !important;
 }
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
