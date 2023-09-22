@@ -32,7 +32,12 @@ function SingleLead() {
             {lead.title}
           </Typography>
           <Typography
-            sx={{ color: "#10C4FD", width: "302px", margin: "auto" }}
+            sx={{
+              color: "#10C4FD",
+              width: "302px",
+              margin: "auto",
+              fontSize: "17px",
+            }}
             variant="body2"
             color="text.secondary"
           >

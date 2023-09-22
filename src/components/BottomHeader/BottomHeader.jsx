@@ -12,7 +12,7 @@ function BottomHeader() {
     <ThemeProvider theme={theme}>
       <Box sx={{ padding: "0px 24px", marginTop: "15%" }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 2 }}>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={6}>
             <Typography
               variant="h3"
               sx={{
@@ -32,7 +32,7 @@ function BottomHeader() {
               <Typography>abhorrent be list jazzy jacarandasthis</Typography>
             </Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={6}>
             <Typography sx={{ textAlign: "center" }}>
               <img
                 srcSet={`${Img}?w=248&fit=crop&auto=format&dpr=2 2x`}

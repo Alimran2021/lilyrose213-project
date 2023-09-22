@@ -3,6 +3,7 @@ import {
   CardActionArea,
   CardContent,
   Grid,
+  Hidden,
   Typography,
 } from "@mui/material";
 import "./team.css";
@@ -16,9 +17,11 @@ const Team = () => {
     <>
       <TopHeader />
       <div className="teamList">
-        <Typography sx={{ paddingTop: "15%" }}>
-          <SingleTeam />
-        </Typography>
+        <Hidden only={"xs"}>
+          <Typography sx={{ paddingTop: "15%" }}>
+            <SingleTeam />
+          </Typography>
+        </Hidden>
         <Grid
           sx={{
             padding: " 5% 24px",

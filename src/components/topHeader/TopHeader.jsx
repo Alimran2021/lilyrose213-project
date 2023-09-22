@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   AppBar,
+  Box,
   Button,
   Stack,
   Toolbar,
@@ -12,7 +13,8 @@ import {
 // import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import HeaderDrawer from "./HeaderDrawer";
 import { NavLink } from "react-router-dom";
-
+import BrushImg from "../../assets/images/print-brush.png";
+import NavProduct from "./NavProduct";
 const TopHeader = () => {
   const [value, setValue] = useState();
   const theme = useTheme();
@@ -24,6 +26,13 @@ const TopHeader = () => {
     <React.Fragment>
       <AppBar sx={{ background: "#0F0F0F" }}>
         <Toolbar>
+          <Box sx={{ marginRight: "10px" }}>
+            <img
+              srcSet={`${BrushImg}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              src={`${BrushImg}?w=248&fit=crop&auto=format`}
+              loading="lazy"
+            />
+          </Box>
           <Typography>
             {/* eslint-disable-next-line react/no-unknown-property */}
             <span sx={{ color: "#fff" }}>
@@ -55,8 +64,8 @@ const TopHeader = () => {
               >
                 {/*  eslint-disable-next-line react/no-unknown-property */}
                 <NavLink to="/home">Home</NavLink>
-                <NavLink sx={{ color: "#fff" }} variant="outlined">
-                  About Us
+                <NavLink to="/paint" sx={{ color: "#fff" }} variant="outlined">
+                  About
                 </NavLink>
                 <NavLink
                   // sx={{ color: "#fff !important", border: "1px solid #10C4FD" }}
@@ -64,14 +73,16 @@ const TopHeader = () => {
                   id="navLink"
                   to="/team"
                 >
-                  Team
+                  Pricing
                 </NavLink>
                 <NavLink sx={{ color: "#fff" }} variant="outlined">
-                  What We Have To Offer
+                  <NavProduct />
                 </NavLink>
               </Stack>
               <Button sx={{ marginLeft: "auto" }} variant="contained">
-                Contact Us
+                <NavLink sx={{ color: "black" }} to="https://www.google.com/">
+                  Contact Us
+                </NavLink>
               </Button>
             </>
           )}

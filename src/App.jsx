@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
-// import Team from "./components/Team/Team";
+import Paint from "./components/paint/Paint";
 import Home from "./components/Home/Home";
 import Team from "./components/Team/Team";
 function App() {
@@ -10,9 +10,8 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/paint" element={<Paint />} />
       </Routes>
-      {/* <Home /> */}
-      {/* <Team /> */}
     </BrowserRouter>
   );
 }

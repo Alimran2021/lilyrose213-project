@@ -17,16 +17,16 @@ const pages = [
     page: "Home",
   },
   {
-    link: "/",
-    page: "About Us",
+    link: "/paint",
+    page: "About",
   },
   {
     link: "/team",
-    page: "Team",
+    page: "Pricing",
   },
   {
     link: "/",
-    page: "What We Have To Offer",
+    page: "Product",
   },
 ];
 const HeaderDrawer = () => {

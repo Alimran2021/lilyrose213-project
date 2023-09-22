@@ -39,11 +39,12 @@ function LeadPointer() {
         {Leads.map((lead, index) => (
           <Grid item rowSpacing={0} xs={6} sm={4} md={4} key={index}>
             <Card sx={{ cursor: "default" }}>
-              <CardActionArea
+              <Box
                 sx={{
                   textAlign: "center",
                   backgroundColor: "#0f0f0f",
                   paddingTop: "20%",
+                  border: "1px solid #0f0f0f",
                 }}
               >
                 <img
@@ -51,7 +52,7 @@ function LeadPointer() {
                   src={`${Img}?w=248&fit=crop&auto=format`}
                   loading="lazy"
                 />
-                <CardContent>
+                <Box>
                   <Typography
                     sx={{ color: "#F2F8FA" }}
                     gutterBottom
@@ -61,14 +62,14 @@ function LeadPointer() {
                     {lead.title}
                   </Typography>
                   <Typography
-                    sx={{ color: "#10C4FD" }}
+                    sx={{ color: "#10C4FD", fontSize: "17px" }}
                     variant="body2"
                     color="text.secondary"
                   >
                     {lead.des}
                   </Typography>
-                </CardContent>
-              </CardActionArea>
+                </Box>
+              </Box>
             </Card>
           </Grid>
         ))}
