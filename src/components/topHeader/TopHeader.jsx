@@ -22,7 +22,13 @@ const TopHeader = () => {
 
   return (
     <React.Fragment>
-      <AppBar sx={{ background: "#0F0F0F" }}>
+      <AppBar
+        sx={{
+          background: "#0F0F0F",
+          padding: "10px",
+          border: "1px solid #10C4FD",
+        }}
+      >
         <Toolbar>
           <Box sx={{ marginRight: "10px", cursor: "pointer" }}>
             <img
