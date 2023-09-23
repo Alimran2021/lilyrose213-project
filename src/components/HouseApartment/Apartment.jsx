@@ -1,21 +1,12 @@
 import { Box, Grid, Hidden, Typography } from "@mui/material";
-import House from "../../assets/images/house-2.png";
-import PImg from "../../assets/images/paint-bush-2.png";
 import aprtGroup from "../../assets/images/apartment-group.png";
-const houses = [
-  { houseImg: House },
-  { houseImg: House },
-  { houseImg: House },
-  { houseImg: House },
-];
-const paintImgs = [{ paintImg: PImg }, { paintImg: PImg }, { paintImg: PImg }];
 
 const Apartment = () => {
   return (
     <Box
       sx={{
         border: "1px solid #10C4FD",
-        padding: "6% 9% 10% 5%",
+        padding: "6% 9% 10.5% 5%",
       }}
     >
       <Typography
@@ -57,30 +48,6 @@ const Apartment = () => {
               src={`${aprtGroup}?w=248&fit=crop&auto=format`}
               loading="lazy"
             />
-
-            {/* <Box>
-              {houses.map((house, index) => (
-                <img
-                  key={index}
-                  srcSet={`${house.houseImg}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                  src={`${house.houseImg}?w=248&fit=crop&auto=format`}
-                  loading="lazy"
-                />
-              ))}
-            </Box>
-          </Grid>
-          <Grid item xs={6}>
-            <Box>
-              {paintImgs.map((paint, index) => (
-                <img
-                  key={index}
-                  srcSet={`${paint.paintImg}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                  src={`${paint.paintImg}?w=248&fit=crop&auto=format`}
-                  loading="lazy"
-                />
-              ))}
-            </Box>
-          </Grid> */}
           </Grid>
         </Grid>
       </Box>

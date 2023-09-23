@@ -10,7 +10,12 @@ theme = responsiveFontSizes(theme);
 function BottomHeader() {
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ padding: "0px 24px", marginTop: "15%" }}>
+      <Box
+        sx={{
+          //  padding: "0px 24px",
+          marginTop: "15%",
+        }}
+      >
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 2 }}>
           <Grid item xs={12} md={6}>
             <Typography

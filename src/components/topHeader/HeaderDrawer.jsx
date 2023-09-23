@@ -6,11 +6,10 @@ import {
   List,
   ListItemButton,
   ListItemIcon,
-  ListItemText,
   Stack,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-// const pages = ["Home", "About Us", "Team", "What We Have To Offer"];
+import { NavLink } from "react-router-dom";
 const pages = [
   {
     link: "/home",
@@ -41,9 +40,9 @@ const HeaderDrawer = () => {
       >
         <List>
           {pages.map((p, index) => (
-            <ListItemButton to={p.link} key={index}>
+            <ListItemButton key={index}>
               <ListItemIcon>
-                <ListItemText>{p.page}</ListItemText>
+                <NavLink to={p.link}>{p.page}</NavLink>
               </ListItemIcon>
             </ListItemButton>
           ))}

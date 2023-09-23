@@ -1,5 +1,4 @@
 import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
-// import Lead from "./lead.json";
 import Img from "../../assets/images/img-2.png";
 const lead = {
   id: 1,

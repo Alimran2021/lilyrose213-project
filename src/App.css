@@ -4,6 +4,7 @@ a {
   color: #fff !important;
   text-decoration: inherit;
   padding: 6px;
+  font-size: 17px !important;
 }
 .css-1y3seza-MuiButtonBase-root-MuiButton-root a {
   color: #000000 !important;
@@ -21,4 +22,22 @@ body {
   background-color: #0f0f0f !important;
   border-radius: 0 !important;
   padding: 0 !important;
+}
+.css-zddlty-MuiButtonBase-root-MuiButton-root {
+  text-transform: capitalize !important;
+  font-weight: bold !important;
+  font-size: 17px !important;
+}
+/* Navber Drawer */
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+  background-color: #0f0f0f !important;
+  color: #ffffff !important;
+}
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper a {
+  color: #ffffff !important;
+  text-align: center !important;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  background-color: #ffffff !important;
+  color: #000000 !important;
 }

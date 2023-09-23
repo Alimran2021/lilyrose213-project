@@ -9,8 +9,6 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-// import "./topHeader.css";
-// import AddBusinessRoundedIcon from "@mui/icons-material/AddBusinessRounded";
 import HeaderDrawer from "./HeaderDrawer";
 import { NavLink } from "react-router-dom";
 import BrushImg from "../../assets/images/print-brush.png";
@@ -26,14 +24,14 @@ const TopHeader = () => {
     <React.Fragment>
       <AppBar sx={{ background: "#0F0F0F" }}>
         <Toolbar>
-          <Box sx={{ marginRight: "10px" }}>
+          <Box sx={{ marginRight: "10px", cursor: "pointer" }}>
             <img
               srcSet={`${BrushImg}?w=248&fit=crop&auto=format&dpr=2 2x`}
               src={`${BrushImg}?w=248&fit=crop&auto=format`}
               loading="lazy"
             />
           </Box>
-          <Typography>
+          <Typography sx={{ cursor: "pointer" }}>
             {/* eslint-disable-next-line react/no-unknown-property */}
             <span sx={{ color: "#fff" }}>
               {/* eslint-disable-next-line react/no-unknown-property */}

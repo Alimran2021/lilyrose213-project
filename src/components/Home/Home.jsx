@@ -1,14 +1,15 @@
 import TopHeader from "../topHeader/TopHeader";
 import BottomHeader from "../BottomHeader/BottomHeader";
 import LeadPointer from "../LeadPointer/LeadPointer";
+import { Container } from "@mui/material";
 
 const Home = () => {
   return (
-    <div>
+    <Container>
       <TopHeader />
       <BottomHeader />
       <LeadPointer />
-    </div>
+    </Container>
   );
 };
 

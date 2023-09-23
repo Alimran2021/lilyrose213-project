@@ -1,11 +1,4 @@
-import {
-  Box,
-  Card,
-  CardActionArea,
-  CardContent,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Box, Card, Grid, Typography } from "@mui/material";
 import Leads from "./lead.json";
 import Img from "../../assets/images/img-2.png";
 import groupArrow from "../../assets/images/group-arrow.png";
@@ -27,7 +20,7 @@ function LeadPointer() {
       </Hidden>
       <Grid
         sx={{
-          padding: "0px 24px",
+          // padding: "0px 24px",
           margin: "15% 15%",
           backgroundColor: "#0f0f0f !important",
           textAllign: "center",
