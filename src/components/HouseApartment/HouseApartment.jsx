@@ -4,18 +4,16 @@ import House from "./House";
 
 const HouseApartment = () => {
   return (
-    <div>
-      <Box>
-        <Grid container rowSpacing={1}>
-          <Grid item xs={12} md={6}>
-            <House />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Apartment />
-          </Grid>
+    <Box>
+      <Grid container rowSpacing={1}>
+        <Grid item xs={12} md={6}>
+          <House />
         </Grid>
-      </Box>
-    </div>
+        <Grid item xs={12} md={6}>
+          <Apartment />
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 

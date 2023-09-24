@@ -22,7 +22,7 @@ function LeadPointer() {
         sx={{
           // padding: "0px 24px",
           margin: "15% 15%",
-          backgroundColor: "#0f0f0f !important",
+          backgroundColor: "#000000",
           textAllign: "center",
         }}
         container
@@ -35,9 +35,9 @@ function LeadPointer() {
               <Box
                 sx={{
                   textAlign: "center",
-                  backgroundColor: "#0f0f0f",
+                  backgroundColor: "#000000",
                   paddingTop: "20%",
-                  border: "1px solid #0f0f0f",
+                  border: "1px solid #000000",
                 }}
               >
                 <img

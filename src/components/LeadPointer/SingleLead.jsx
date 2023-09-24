@@ -12,7 +12,7 @@ function SingleLead() {
       <CardActionArea
         sx={{
           textAlign: "center",
-          backgroundColor: "#0f0f0f",
+          backgroundColor: "#000000",
           paddingTop: "20%",
         }}
       >
