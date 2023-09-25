@@ -16,7 +16,7 @@ const pages = [
     page: "Home",
   },
   {
-    link: "/paint",
+    link: "/about",
     page: "About",
   },
   {

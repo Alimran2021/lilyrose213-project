@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
-import Paint from "./components/paint/Paint";
 import Home from "./components/Home/Home";
 import Team from "./components/Team/Team";
+import About from "./components/About/About";
+import NotFound from "./components/NotFound/NotFound";
 function App() {
   return (
     <BrowserRouter>
@@ -10,7 +11,8 @@ function App() {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/paint" element={<Paint />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

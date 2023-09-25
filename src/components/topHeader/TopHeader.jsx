@@ -68,7 +68,7 @@ const TopHeader = () => {
               >
                 {/*  eslint-disable-next-line react/no-unknown-property */}
                 <NavLink to="/home">Home</NavLink>
-                <NavLink to="/paint" sx={{ color: "#fff" }} variant="outlined">
+                <NavLink to="/about" sx={{ color: "#fff" }} variant="outlined">
                   About
                 </NavLink>
                 <NavLink

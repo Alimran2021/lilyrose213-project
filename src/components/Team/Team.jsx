@@ -21,7 +21,7 @@ const Team = () => {
       <div className="teamList">
         <Container>
           <Hidden only={"lg"}>
-            <Box sx={{ marginTop: "20%" }}></Box>
+            <Box sx={{ paddingTop: "20%" }}></Box>
           </Hidden>
           <Hidden only={"xs"}>
             <Typography sx={{ paddingTop: "15%" }}>

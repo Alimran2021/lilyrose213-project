@@ -29,6 +29,9 @@ body {
   font-weight: bold !important;
   font-size: 17px !important;
 }
+.css-zddlty-MuiButtonBase-root-MuiButton-root:focus {
+  outline: none;
+}
 /* Navber Drawer */
 .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
   background-color: #0f0f0f !important;
@@ -72,4 +75,9 @@ body {
 }
 .css-k008qs {
   align-items: baseline !important;
+}
+
+/* about page */
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root:focus {
+  outline: none;
 }
